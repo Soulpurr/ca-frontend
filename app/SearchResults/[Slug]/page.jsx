@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { toast } from "react-toastify";
+
 export default async function page({ params }) {
   let found = true;
   const res = await getData();
@@ -22,7 +22,7 @@ export default async function page({ params }) {
       )}
       {found == false && (
         <div className="text-center text-red-500 text-bold text-xl sm:text-4xl">
-          No results for your query,Showing all data
+          No results for your query Showing all data
         </div>
       )}
       <div className="justify-center flex flex-wrap gap-6">
